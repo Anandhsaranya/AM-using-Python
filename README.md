@@ -1,20 +1,20 @@
-AM USING PYTHON:
+# AM USING PYTHON:
 
-Aim:
+# Aim:
 
 To implement and analyze amplitude modulation (AM) using Python's NumPy and Matplotlib libraries.
 
-Apparatus Required:
+# Apparatus Required:
 
 Software: Python with NumPy and Matplotlib libraries Hardware: Personal Computer
 
-Theory:
+# Theory:
 
 Amplitude Modulation (AM) is a technique used in electronic communication, primarily for transmitting information via a radio carrier wave. In AM, the amplitude of the carrier wave is varied in proportion to that of the message signal. The general form of an AM signal is:
 ![WhatsApp Image 2025-10-30 at 08 57 27_00c78055](https://github.com/user-attachments/assets/e5172107-622e-4b03-a3ed-6623574ba056)
 
-Program:
-
+# Program:
+```
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -34,8 +34,9 @@ plt.plot(t, c)
 s = (Ac + m) * np.cos(2 * np.pi * fc * t)
 plt.subplot(3, 1, 3)
 plt.plot(t, s)
+```
 
-Output Waveform:
+# Output Waveform:
 
 <img width="1920" height="1080" alt="Screenshot (125)" src="https://github.com/user-attachments/assets/1ae41b2a-648b-42f4-a4bd-df86d62a2be1" />
 
@@ -43,7 +44,7 @@ Tabular Column:
 
 ![5th table](https://github.com/user-attachments/assets/85f44e15-9734-483c-8d4f-d2b17b19b70b)
 
-Algorithm:
+# Algorithm:
 
 Initialize Parameters: Set the values for carrier frequency, message frequency, and sampling frequency.
 Generate Time Axis: Create a time vector for the signal duration.
@@ -52,6 +53,6 @@ Generate Carrier Signal: Define the carrier signal as a cosine wave.
 Modulate Signal: Apply the AM formula to obtain the modulated signal.
 Plot the Signals: Use Matplotlib to plot the message signal, carrier signal, and modulated signal.
 
-Result:
+# Result:
 
 The message signal, carrier signal, and amplitude modulated (AM) signal will be displayed in separate plots. Thus AM is implemented using numPy and Matplotlib.
